@@ -1,0 +1,758 @@
+/* Sélecteurs universels */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* import fonts */
+
+@font-face {
+    font-family: 'Insignia';
+    src: url("../fonts/InsigniaLTStd.otf") format("otf"), url("../fonts/Insignia.ttf") format("ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+
+/* Fonts MMV  */
+
+.mmvfont {
+    font-family: 'Insignia';
+    font-weight: 400;
+}
+
+
+/* color */
+
+ :root {
+    --bleu: #0d2146;
+    --yellow: #fdc513;
+    --white: white;
+}
+
+
+/* .yellow-color {
+        color: #fdc513 !important;
+    } */
+
+.yellow-color {
+    color: var(--yellow);
+}
+
+.bleu-color {
+    color: var(--bleu);
+}
+
+
+/* body */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* map */
+
+.map {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.map img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* box-marker */
+
+.box-marker {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.box-marker:hover>.pin-text {
+    display: block;
+}
+
+
+/* filter */
+
+.ul-filter {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 800;
+    padding-left: 0px;
+}
+
+#filter-options li {
+    float: left;
+    margin-left: 20px;
+    color: var(--bleu);
+    font-size: 12px;
+}
+
+#product-list {
+    display: block;
+}
+
+
+/* tab switch */
+
+.tab-slider--nav {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.tab-slider--tabs {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border-radius: 35px;
+    overflow: hidden;
+    background: #fff;
+    height: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tab-slider--tabs:after {
+    content: "";
+    width: 50%;
+    background: #0d2146;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 250ms ease-in-out;
+    border-radius: 35px;
+}
+
+.tab-slider--tabs.slide:after {
+    left: 50%;
+}
+
+.tab-slider--trigger {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0d2146;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 20px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 250ms ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    left: 11px;
+}
+
+.tab-slider--trigger.active {
+    color: #fff;
+}
+
+.tab-slider--body {
+    margin-bottom: 20px;
+}
+
+
+/* map leatef */
+
+#mapid {
+    height: 613.125px;
+    margin: 10px;
+}
+
+.div1 {
+    display: inline;
+}
+
+.div2 {
+    display: none;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-inline {
+    display: inline !important;
+}
+
+#map {
+    position: relative;
+    height: 300px;
+    width: 400px;
+}
+
+.leaflet-editing-icon {
+    border-radius: 50%;
+    background-color: #ffbf4b;
+}
+
+
+.svg-inline--fa.fa-w-12 {
+    width: .4em !important;
+}
+
+#options {
+    margin: 1em 1em 0em 1em;
+}
+
+.optionBox,
+#optionHead1,
+#optionHead2 {
+    text-align: center;
+}
+
+.buttons {
+    width: 6%;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    z-index: 99 !important;
+}
+
+.buttons button {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.glyphicon-refresh:before {
+    content: "\e031";
+    font-weight: 900 !important;
+}
+
+
+/* pin style */
+.pin-text {
+    position: absolute;
+    top: 29%;
+    transform: translateY(-50%);
+    left: -10;
+    white-space: nowrap;
+    display: none;
+    left: 50;
+    left: 53px;
+    z-index: 10;
+}
+
+.pin-text h3 {
+    color: var(--bleu);
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* POI Val Thorens */
+/* POI Val Thorens */
+#pin-Arolles {
+    top: 48.1%;
+    left: 30.9%;
+}
+
+#clubPiouArolles {
+    top: 60.7% !important;
+    left: 49.8% !important;
+}
+
+#depatski-BellePlagne {
+    top: 30.5% !important;
+    right: 28.8%;
+}
+
+#Accespistesarolles {
+    top: 55.6% !important;
+    left: 26.2% !important;
+}
+
+#esf-Arolles {
+    top: 75.9% !important;
+    left: 31.9% !important;
+}
+#Arolles-shop {
+    top: 80.9% !important;
+    left: 20.9% !important;
+}
+
+#Arolles-skiset {
+    top: 50.8% !important;
+    right: 40.3% !important;
+}
+#Arolles-OT {
+    top: 24.9% !important;
+    right: 46.9% !important;
+}
+#Arolles-skipass{
+    top: 83.9% !important;
+    left: 40.5% !important;
+}
+#Arolles-shop {
+    top: 39.9% !important;
+    left: 53.9% !important;
+}
+/* POI Les Bergers */
+/* POI Les Bergers */
+#pin-Bergers {
+    top: 28.5%;
+    left: 71%;
+}
+
+#BergersFrontneige {
+    top: 30.9% !important;
+    right: 29.1% !important;
+}
+
+#Bergers-esf {
+    top: 35.4% !important;
+    right: 30.4% !important;
+}
+
+#Bergers-Skiset{
+    top: 32.5% !important;
+    right: 26.0% !important;
+}
+/* POI Arc2000 */
+/* POI Arc2000 */
+
+#pin-Melèzes {
+    top: 33.5%;
+    left: 47%;
+}
+
+#pin-altitude {
+    top: 50.5%;
+    left: 32%;
+}
+
+#Arc2000-frontneige {
+    top: 25.2% !important;
+    right: 36.8% !important;
+}
+
+#esf-arc2000 {
+    top: 22.7% !important;
+    right: 41.5% !important;
+}
+
+#Arc200-Skiset {
+    top: 44.5% !important;
+    right: 59.2% !important;
+}
+
+#Arc2000-ot {
+    top: 26.5% !important;
+    right: 42.8% !important;
+}
+
+/* POI Arc2000 */
+/* POI Arc2000 */
+
+#pin-Belleplagne {
+    top: 58%;
+    left: 45.1%;
+}
+
+#frontneigeBellepagne {
+    top: 33.5% !important;
+    right: 47.1% !important;
+}
+
+#clubPiouBelleplagne {
+    top: 38.7% !important;
+    left: 28.8% !important;
+}
+
+#pin-4 {
+    top: 23.5% !important;
+    right: 31.5% !important;
+}
+
+#depatski-BellePlagne {
+    top: 30.5% !important;
+    right: 26.1%;
+}
+
+#AccespistesBllePlagne {
+    top: 53.6% !important;
+    left: 15.9% !important;
+}
+
+#esf-Belleplagne {
+    top: 29.9% !important;
+    right: 29.8% !important;
+}
+
+#pin-MontgenevreParking {
+    top: 42.5%;
+    left: 19.8%;
+}
+
+#pin-tcMontgenvre {
+    top: 50.9%;
+    left: 31.1%;
+}
+
+/* POI Corbier */
+/* POI Corbier */
+
+
+#pin-corbier {
+    top: 17.1%;
+    left: 70%;
+}
+
+#pin-CorbierFrontneige {
+    top: 22.9% !important;
+    right: 36.1% !important;
+}
+
+#pin-3 {
+    top: 35.7% !important;
+    right: 31.8% !important;
+}
+
+#pin-CorbierMarchand {
+    top: 22.5% !important;
+    right: 28.8% !important;
+}
+
+#pin-CorbierEsf {
+    top: 30.5% !important;
+    right: 42.9% !important;
+}
+
+#pin-CorbierOT {
+    top: 26.5% !important;
+    right: 44.7% !important;
+}
+
+#pin-CorbierParking {
+    top: 23.5%;
+    left: 79.2%;
+}
+
+#pin-CorbierGarderie {
+    top: 18.1%;
+    left: 65.8%;
+}
+
+/* POI Flaine */
+/* POI  Flaine */
+#pin-Flaine {
+    top: 61.5%;
+    left: 72.5%;
+}
+
+#pin-Flaine1500 {
+    top: 73.9% !important;
+    right: 12.9% !important;
+}
+
+#pin-FlaineForums {
+    top: 62.5% !important;
+    right: 13.5% !important;
+}
+
+#esf-Flaine {
+    top: 63.8% !important;
+    right: 7.3% !important;
+}
+
+#pin-FlaineCours {
+    top: 67.5% !important;
+    right: 11.4% !important;
+}
+
+#pin-FlaineDepartski {
+    top: 59.5%;
+    right: 4.8%;
+}
+/* POI Isola*/
+/* POI  Isola */
+#pin-Isola {
+    top: 42.5%;
+    left: 40.2%;
+}
+
+#pin-Isolafront {
+    top: 37.9% !important;
+    right: 29.9% !important;
+}
+
+#pin-IsolaCommerces {
+    top: 34.2% !important;
+    right: 31.5% !important;
+}
+
+#esf-Isola {
+    top: 37.1% !important;
+    right: 33% !important;
+}
+/* POI Les deux Alpes*/
+/* POI Les deux Alpes */
+
+#pin-Clarine {
+    top: 26.3%;
+    right: 21.5%
+}
+
+#pin-panorama {
+    top: 49.1%;
+    left: 32.2%;
+}
+
+#pin-2 {
+    top: 34.7% !important;
+    right: 41.8% !important;
+}
+
+#skietdeuxaples {
+    top: 28.5% !important;
+    right: 23.2% !important;
+}
+
+#esf-deuxaples {
+    top: 34.5% !important;
+    right: 38.8% !important;
+}
+
+#pin-4 {
+    top: 46.5% !important;
+    right: 62.2% !important;
+}
+
+#jandrideuxaples {
+    top: 26.9% !important;
+    right: 43.6% !important;
+}
+
+#ts-deuxaples {
+    top: 32.1% !important;
+    right: 21.5% !important;
+}
+
+#departskialpe-1 {
+    top: 40.5% !important;
+    right: 59% !important;
+}
+
+#officetourismeAple-2 {
+    top: 30.8% !important;
+    right: 44.8% !important;
+}
+
+#telesiege-alpes {
+    top: 14.9% !important;
+    right: 25.7% !important;
+
+}
+
+#resfdeuxalpes-1 {
+    top: 25.3% !important;
+    right: 36.5% !important;
+}
+
+#resfdeuxalpes-2 {
+    top: 30.8% !important;
+    right: 42.2% !important;
+}
+
+#officetourismeAple-1 {
+    top: 56.5% !important;
+    right: 61.8% !important;
+
+}
+
+/* POI Les Menuires*/
+/* POI Les Menires */
+#pin-Menuires {
+    left: 15.8%;
+    top: 65.8%;
+}
+
+#rassemblement-menuires {
+    top: 39.9% !important;
+    right: 40.7% !important;
+}
+
+#OT-Menuires {
+    top: 42.5% !important;
+    right: 42.5% !important;
+}
+
+#skisetMenuires {
+    top: 68.5% !important;
+    left: 16.9% !important;
+}
+/* POI Montgenevre*/
+/* POI Montgenevre */
+
+#pin-Montgenevre {
+    top: 49.4%;
+    left: 12.5%;
+}
+
+#frontneigeMontgenevre {
+    top: 33.5% !important;
+    right: 49.4% !important;
+}
+
+#ClubPiouMontgenevre {
+    top: 46.7% !important;
+    left: 29.5% !important;
+}
+
+#depatcoursMontgenevre {
+    top: 49.5% !important;
+    left: 17.1%;
+}
+
+#tsMontgenevre {
+    top: 53.9%;
+    left: 18.3%;
+  
+}
+
+#esf-montgenevre {
+    
+    top: 51.9% !important;
+    left: 13.8% !important;
+}
+
+#pin-MontgenevreParking {
+    top: 42.5%;
+    left: 16.8%;
+}
+
+#pin-tcMontgenvre {
+    top: 50.9%;
+    left: 28.3%;
+}
+/* POI Plagne 2000*/
+/* POI Plagne 2000 */
+
+
+#pin-Plagne2000 {
+    top: 70.5%;
+    right: 29.2%;
+}
+
+#pin-FrontPlagne2000 {
+    top: 9.9% !important;
+    left: 46.9% !important;
+}
+
+#pin-ParkingPlagne2000 {
+    top: 47.5% !important;
+    right: 49.5% !important;
+}
+
+#Gmarchandes-Plagne2000 {
+    top: 18.3% !important;
+    right: 39.5% !important;
+}
+
+#esf-Plagne2000 {
+    top: 67.5% !important;
+    right: 25.2% !important;
+
+}
+
+#skiset-PLagne2000 {
+    top: 76.5% !important;
+    right: 29.4% !important;
+}
+
+#pin-PlagneDepartski {
+    top: 68.5%;
+    right: 1.8%;
+}
+
+/* POI Beaufort*/
+/* POI Beaufort */
+
+#pin-Beaufort {
+    top: 60.3%;
+    left: 51.9%;
+}
+#esf-Beaufort{
+    top: 32.9% !important;
+    right: 27.3%;
+}
+#Departski-Beaufort{
+ top: 35.9% !important;
+ right: 25.6%;   
+}
+
+/* POI Valcenis*/
+/* POI Valcenis */
+
+#pin-Valcenis {
+    top: 23.8%;
+    left: 33.9%;
+}
+#esf-Valcenis{
+    top: 31.9% !important;
+    right: 50.3%;
+}
+#Departski-Valcenis{
+    top: 27.9% !important;
+    right: 48.7%; 
+}
+
+
+/* POI SainteFoy*/
+/* POI SainteFoy */
+
+#pin-SainteFoy {
+    top: 39.6%;
+    left: 33.3%;
+}
+#esf-SainteFoy{
+    top: 37.9% !important;
+    right: 53.9%;
+}
+
+#Departski-SainteFoy{
+    top: 41.5% !important;
+    right: 52.4%;
+}
+
+
+/* POI Saisies*/
+/* POI Saisies */
+
+#pin-Saisies {
+    top: 28.6%;
+    left: 37.1%;
+}
+#esf-Saisies{
+    top: 38.9% !important;
+    right: 68.9%;
+}
+
+#Departski-Saisies{
+    top: 34.5% !important;
+    right: 67.7%;
+
+}
